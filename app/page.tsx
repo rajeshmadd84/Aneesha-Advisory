@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Header, Footer } from "@/components/layout"
-import { Dumbbell, Users, Target, CheckCircle, Star } from "lucide-react"
+import { Dumbbell, Users, Target, CheckCircle, Star, BookOpen } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -20,13 +20,12 @@ export default function HomePage() {
                 <Badge className="bg-orange-100 text-orange-800 hover:bg-orange-100">
                   {"#1 Fitness Studio in the City"}
                 </Badge>
-                <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                  Transform Your Body,
-                  <span className="text-orange-600"> Transform Your Life</span>
-                </h1>
+                <h2 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
+                Make the right admissions decision - 
+                  <span className="text-orange-600"> and execute it with confidence</span>
+                </h2>
                 <p className="text-xl text-gray-600 leading-relaxed">
-                  Join thousands who have achieved their fitness goals with our expert trainers, state-of-the-art
-                  equipment, and personalized workout plans.
+                I help professionals applying to top global business and executive programs make aligned, strategic choices — and craft applications that reflect their true potential.
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -84,20 +83,28 @@ export default function HomePage() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 lg:px-6">
           <div className="text-center space-y-4 mb-16">
-            <Badge className="bg-orange-100 text-orange-800">Our Programs</Badge>
-            <h2 className="text-4xl font-bold text-gray-900">Choose Your Fitness Journey</h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              From beginner-friendly classes to advanced training programs, we have something for everyone.
-            </p>
+            <Badge className="bg-orange-100 text-orange-800">What I Do</Badge>
+            <h2 className="text-3xl font-bold text-gray-900">Admissions isn't a process problem.</h2>
+            <h2 className="text-3xl font-bold text-gray-800 mt-4">It's a decision problem and a story problem.</h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
+          <div className="flex justify-center mb-8">
+            <div className="relative inline-block">
+              <div className="absolute inset-0 bg-gradient-to-r from-orange-400 to-red-400 rounded-lg blur-sm opacity-30"></div>
+              <div className="relative bg-gradient-to-r from-orange-500 to-red-500 text-white px-8 py-4 rounded-lg shadow-lg transform -rotate-1 hover:rotate-0 transition-transform duration-300">
+                <span className="text-2xl font-bold">I help Candidates with</span>
+                
+              </div>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
             <Card className="group hover:shadow-xl transition-all duration-300 border-2 hover:border-orange-200">
               <CardHeader className="text-center pb-4">
                 <div className="mx-auto bg-orange-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:bg-orange-200 transition-colors">
                   <Dumbbell className="h-8 w-8 text-orange-600" />
                 </div>
-                <CardTitle className="text-2xl">Strength Training</CardTitle>
+                <CardTitle className="text-2xl">Why?</CardTitle>
                 <CardDescription className="text-base">
                   Build muscle and increase strength with our comprehensive weight training programs.
                 </CardDescription>
@@ -124,6 +131,18 @@ export default function HomePage() {
                 <CardTitle className="text-2xl">Yoga & Wellness</CardTitle>
                 <CardDescription className="text-base">
                   Find balance and flexibility with our yoga classes and wellness programs.
+                </CardDescription>
+              </CardHeader>
+            </Card>
+
+            <Card className="group hover:shadow-xl transition-all duration-300 border-2 hover:border-orange-200">
+              <CardHeader className="text-center pb-4">
+                <div className="mx-auto bg-blue-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:bg-blue-200 transition-colors">
+                  <BookOpen className="h-8 w-8 text-blue-600" />
+                </div>
+                <CardTitle className="text-2xl">Personal Training</CardTitle>
+                <CardDescription className="text-base">
+                  One-on-one coaching tailored to your specific goals and fitness level.
                 </CardDescription>
               </CardHeader>
             </Card>
